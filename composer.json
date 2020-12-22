@@ -1,0 +1,37 @@
+{
+    "name": "foostart/package-minify",
+    "type": "library",
+    "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+    "keywords": ["minify", "minifier", "css", "js", "javascript"],
+    "homepage": "http://foostart.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Foostart",
+            "homepage": "http://foostart.com",
+            "email": "foostart.com@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-pcre": "*",
+        "foostart/package-path-converter": "*"
+    },
+    "require-dev": {
+        "foostart/scrapbook": "~1.0",
+        "friendsofphp/php-cs-fixer": "~2.0"
+    },
+    "suggest": {
+        "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foostart\\Minify\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/package-minifycss",
+        "bin/package-minifyjs"
+    ]
+}
