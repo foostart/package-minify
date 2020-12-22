@@ -31,7 +31,7 @@
         }
     },
     "bin": [
-        "bin/package-minifycss",
-        "bin/package-minifyjs"
+        "bin/minifycss",
+        "bin/minifyjs"
     ]
 }
